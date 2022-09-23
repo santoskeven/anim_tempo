@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.CimaCont{
+    height: 60%;
+    width: 100%;
+    background-color: rgba(31, 28, 28, 0.149);
+    position: relative;
+}
+
+.CimaCont img{
+    position: absolute;
+    top: -40%;
+    /* left: 0px; */
+    height: 140%;
+    object-fit: fill;
+    width: 100%;
+    opacity: .8;
+}
+
+.contentHelice{
+    position: absolute;
+    /* width: 20rem;
+    height: 10rem;   */
+    right: 30%;
+    bottom: 0;
+}
+
+.suportes{
+    display: block;
+    width: 1.6rem;
+    height: 25rem;
+    background-color: black;
+    position: relative;
+}
+
+.suportes::before{
+    content: '';
+    width: 38px;
+    height: 4rem;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: -11px
+}
+.suportes::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: absolute;
+    top: -5px;
+    left: -9px;
+}
+
+.suportes img{
+    position: absolute;
+    top: -9.5rem;
+    left: -9.7rem;
+    z-index: 2;
+    width: 21rem;
+    height: 21rem;
+    animation: helice linear infinite 3s;
+}
+
+@keyframes helice{
+    0%{
+        transform: rotate(-360deg);
+    }
+}
+
+.BaixoCont{
+    height: 40%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(31, 28, 28, 0.466);
+}
+
+.infoEsq{
+    display: flex;
+    font-size: 4rem;
+    padding: 0 1rem;
+}
+
+.infoDir{
+    display: flex;
+    font-size: 9rem;
+    padding: 0 1rem;
+}
